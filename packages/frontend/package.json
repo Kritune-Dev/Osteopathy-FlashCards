@@ -1,0 +1,20 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "Frontend with react et TS",
+  "author": "Corentin Bacconnais <corentin.bacconnais@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

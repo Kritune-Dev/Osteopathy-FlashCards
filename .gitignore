@@ -1,0 +1,53 @@
+# Editors
+.vscode
+
+# Package directories
+lerna-debug.log
+node_modules
+jspm_packages
+
+#Logs
+yarn-error.log
+
+# Builded
+dist
+tsconfig.tsbuildinfo
+
+# Environment variables
+.env
+
+# Lock
+yarn.lock
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+coverage
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# sessions
+sessions
+
+# lib files
+packages/*/lib
+
+# zsh Files
+.zshrc
+
+.DS_Store
+
+# Packaged files
+pkg
+
+# Tarballs and Archives
+.zip
+.tar.gz
+.gz
+.tgz

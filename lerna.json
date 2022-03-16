@@ -1,0 +1,10 @@
+{
+  "command": {
+    "version": {
+      "conventionalCommits": true, 
+      "message": ":bookmark: Change version"
+    }
+  },
+  "useWorkspaces": true,
+  "version": "independent"
+}
