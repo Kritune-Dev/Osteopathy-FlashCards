@@ -1,10 +1,17 @@
 'use strict';
 
-//import express and body-parser
+//import express and winston
 const express = require('express');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
+const cors = require('cors');
 require('dotenv').config()
+
+//import bdd connection
+const { connectToMongoDB } = require('./config/mongo');
+
+//import routes
+const { flashCardRouter } = require('./routes/flashcard');
 
 //create express app
 const app = express();
@@ -18,7 +25,11 @@ app.use(bodyParser.json())
 // secure apps by setting various HTTP headers
 app.use(helmet());
 
+// setup routes if path is /api/flashcards
+app.use('/api/flashcards', flashCardRouter);
+
 // listen for requests and connect to mangoDB
 app.listen(process.env.PORT, () => {
-    console.log('Server is listening on port 3000');
+    connectToMongoDB();
+    console.log(`Server is listening on port ${process.env.PORT}`);
 });
